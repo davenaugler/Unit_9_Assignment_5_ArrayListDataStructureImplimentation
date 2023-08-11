@@ -41,8 +41,6 @@ public class CustomArrayList<T> implements CustomList<T> {
 		}
 		return (T) items[index];
 	}
-	
-	
 
 	// CHECK LIST
 
