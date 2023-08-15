@@ -3,12 +3,12 @@ package com.coderscampus.Assignment5;
 import java.util.Arrays;
 
 public class CustomArrayList<T> implements CustomList<T> {
-	private int defaultCapacity = 10;
+	private int initialCapacity = 10;
 	private Object[] items;
 	private int size;
 
 	public CustomArrayList() {
-		items = new Object[defaultCapacity];
+		items = new Object[initialCapacity];
 		size = 0;
 	}
 
