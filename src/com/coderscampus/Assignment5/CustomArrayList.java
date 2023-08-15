@@ -65,7 +65,9 @@ public class CustomArrayList<T> implements CustomList<T> {
 		// It then casts the item stored at the specified index to type 'T' and returns it.
 		return (T) items[index];
 	}
+	
 	// REMOVE - Coming soon
 	// Will need to remove an element down the line
 	// Think about how you plan on making that happen
+
 }
