@@ -42,29 +42,4 @@ public class CustomArrayList<T> implements CustomList<T> {
 		return (T) items[index];
 	}
 
-	// CHECK LIST
-
-	// [x] - CHECK CAPACITY: in checkCapacity method
-	// When an item is added, check to see if there is enough space
-	// If not double the size, from 10
-	// If there is enough space add the item
-
-	// [x] - RESIZING: in checkCapacity method (maybe another method for this?)
-	// If the current capacity isn't big enough, the ArrayList
-	// will create an array with a larger capacity, double the current size
-	// and then copy the existing elements from the old array to the new array
-
-	// [x] - ADDING ELEMENT: in add method
-	// Once there is enough space, the new element is placed in the next
-	// position in the ArrayList. The ArrayList keeps track of the number
-	// of elements it contains and updates this count accordingly
-
-	// [x] - UPDATE SIZE: in add method
-	// After adding the element, the size of the ArrayList is increased by
-	// one to reflect the addition of the new element
-
-	// REMOVE - Coming soon
-	// Will need to remove an element down the line
-	// Think about how you plan on making that happen
-
 }
