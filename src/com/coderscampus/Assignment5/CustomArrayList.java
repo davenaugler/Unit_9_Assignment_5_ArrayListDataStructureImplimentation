@@ -3,19 +3,27 @@ package com.coderscampus.Assignment5;
 import java.util.Arrays;
 
 public class CustomArrayList<T> implements CustomList<T> {
-	private int defaultCapacity = 10;
-	private Object[] items;
-	private int size;
+	private int initialCapacity = 10; // integer that sets the initial capacity of the array to a list of 10
+	private Object[] items; // 'items' is an array of Object. Stores the items in the array list
+	private int size; // keeps track of the number of items currently in the list
 
-	public CustomArrayList() {
-		items = new Object[defaultCapacity];
+	// constructor initializes the 'items' array with the initialCapacity and sets the initial 'size' to 0
+	public CustomArrayList() { 
+		items = new Object[initialCapacity];
 		size = 0;
 	}
 
+	
+	// The 'add' method takes an item of type 'T', ('T' is a generic), as an argument and adds it to the array list 
 	@Override
 	public boolean add(T item) {
+		// First it checks the current size of the list plus one exceeds the current capacity. 
+		// If so, it invokes the 'checkCapacity' method to increase the capacity of the list
 		checkCapacity(size + 1);
+		// Then it assigns the new item to the next available index in the 'items' array
+		// and increments the 'size' counter
 		items[size++] = item;
+		// Returns 'true' to indicate that the addition was successful
 		return true;
 	}
 
